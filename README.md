@@ -19,7 +19,7 @@ chkconfig aws-swap-init on
 
 ## Testing 
 
-You can test to see if the script work via you should get an output when checking the EC2 instance that looks similar to this:
+You can test to see if the script worked via you should get an output when checking the EC2 instance that looks similar to this:
 
 ````[ec2-user ~]$ lsblk
 NAME  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
