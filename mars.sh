@@ -73,4 +73,4 @@ case "$1" in
 esac
 exit $?
 
-# Love ya Mars
+# Love ya a lot Mars
