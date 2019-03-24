@@ -16,3 +16,16 @@ update-rc.d aws-swap-init defaults
 chkconfig --add aws-swap-init
 chkconfig aws-swap-init on
 ````
+
+## Testing 
+
+You can test to see if the script work via you should get an output when checking the EC2 instance that looks similar to this:
+
+````[ec2-user ~]$ lsblk
+NAME  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+xvda1 202:1    0    8G  0 disk /
+xvda3 202:3    0  896M  0 disk [SWAP]
+[ec2-user ~]$ swapon -s
+Filename                                Type            Size    Used    Priority
+/dev/xvda3                              partition       917500  0       -1
+````
